@@ -1,3 +1,4 @@
+// array of famous quotes
 
 const messages = [
     "The greatest glory in living 7lies not in never falling, 8but in rising every time we fall.", 
@@ -20,7 +21,10 @@ const messages = [
 ];    
 
 
+// selecting random parts of the message
+
 function partMessage(messagesBase, part){
+
     let rndNumber = Math.floor(Math.random() * (17));
     let randomPart = messagesBase[rndNumber];
     let pos7 = randomPart.indexOf('7');
@@ -43,6 +47,8 @@ function partMessage(messagesBase, part){
     return newPart;
 }
 
+// creating random messages
+
 function randomMessage(messagesBase){
 
     let part = 0;
@@ -58,6 +64,6 @@ function randomMessage(messagesBase){
 }
 
 console.log(' ');
-console.log('Someone very inportant some day maybe said :');
+console.log('Someone very important someday maybe said :');
 console.log(' ');
 console.log(randomMessage(messages));
